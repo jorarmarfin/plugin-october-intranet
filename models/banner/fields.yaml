@@ -1,0 +1,21 @@
+fields:
+    frase:
+        label: Frase
+        span: full
+        type: text
+    fondo:
+        label: 'Imagen de Fondo'
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+        comment: 1280x853
+    activo:
+        label: Activo
+        span: auto
+        type: switch

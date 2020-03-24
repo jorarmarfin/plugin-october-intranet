@@ -1,0 +1,44 @@
+plugin:
+    name: 'luismayta.intranet::lang.plugin.name'
+    description: 'luismayta.intranet::lang.plugin.description'
+    author: 'Luis Mayta'
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Intranet
+        url: luismayta/intranet/banner
+        icon: icon-book
+        sideMenu:
+            side-menu-item:
+                label: Material
+                url: luismayta/intranet/material
+                icon: icon-inbox
+            side-menu-item2:
+                label: Eventos
+                url: luismayta/intranet/evento
+                icon: icon-calendar
+            side-menu-item3:
+                label: Biografia
+                url: luismayta/intranet/biografia
+                icon: icon-user-plus
+            side-menu-item4:
+                label: Blog
+                url: luismayta/intranet/blog
+                icon: icon-wordpress
+            side-menu-item5:
+                label: Registro
+                url: luismayta/intranet/registro
+                icon: icon-slideshare
+            side-menu-item6:
+                label: Descargas
+                url: luismayta/intranet/descargas
+                icon: icon-cloud-download
+            side-menu-item7:
+                label: 'Cursos Virtuales'
+                url: luismayta/intranet/cursoscontroller
+                icon: icon-mobile-phone
+            side-menu-item8:
+                label: 'Cursos comprados'
+                url: luismayta/intranet/usercurso
+                icon: icon-dollar

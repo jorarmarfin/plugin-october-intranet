@@ -1,0 +1,10 @@
+name: Blog
+form: $/luismayta/intranet/models/blog/fields.yaml
+modelClass: LuisMayta\Intranet\Models\Blog
+defaultRedirect: luismayta/intranet/blog
+create:
+    redirect: 'luismayta/intranet/blog/update/:id'
+    redirectClose: luismayta/intranet/blog
+update:
+    redirect: luismayta/intranet/blog
+    redirectClose: luismayta/intranet/blog

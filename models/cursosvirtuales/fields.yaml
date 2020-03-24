@@ -1,0 +1,67 @@
+tabs:
+    fields:
+        nombre:
+            label: Nombre
+            span: full
+            type: text
+            tab: 'Datos principales'
+        precio:
+            label: Precio
+            span: auto
+            type: number
+            tab: 'Datos principales'
+        ocultar:
+            label: Ocultar
+            span: auto
+            type: switch
+            tab: 'Datos principales'
+        resumen:
+            label: Resumen
+            size: ''
+            span: full
+            type: textarea
+            tab: 'Datos principales'
+        descripcion:
+            label: Descripción
+            size: large
+            span: full
+            type: richeditor
+            tab: 'Datos principales'
+        imagen:
+            label: Imagen
+            mode: image
+            imageWidth: '300'
+            imageHeight: '200'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Datos principales'
+        slug:
+            label: Slug
+            span: auto
+            defaultFrom: nombre
+            preset:
+                field: nombre
+                type: slug
+            type: text
+            tab: 'Datos principales'
+        audios:
+            label: Audios
+            prompt: 'Agregar audio'
+            span: auto
+            type: repeater
+            tab: Audios
+            form:
+                fields:
+                    titulo_audio:
+                        label: Titulo
+                        span: full
+                        type: text
+                    codigo_audio:
+                        label: 'código de inserción'
+                        size: large
+                        span: full
+                        type: textarea

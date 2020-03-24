@@ -1,0 +1,10 @@
+name: Material
+form: $/luismayta/intranet/models/material/fields.yaml
+modelClass: LuisMayta\Intranet\Models\Material
+defaultRedirect: luismayta/intranet/material
+create:
+    redirect: 'luismayta/intranet/material/update/:id'
+    redirectClose: luismayta/intranet/material
+update:
+    redirect: luismayta/intranet/material
+    redirectClose: luismayta/intranet/material

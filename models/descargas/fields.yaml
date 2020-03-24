@@ -1,0 +1,18 @@
+fields:
+    nombre:
+        label: Nombre
+        span: auto
+        type: text
+    descripcion:
+        label: Descripción
+        span: auto
+        type: text
+    archivo:
+        label: Archivo
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

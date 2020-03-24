@@ -1,0 +1,13 @@
+columns:
+    titulo:
+        label: Titulo
+        type: text
+    fechainicio:
+        label: 'Fecha inicio'
+        type: datetime
+    fechafin:
+        label: 'Fecha fin'
+        type: datetime
+    destacar:
+        label: DEstacado
+        type: switch

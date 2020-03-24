@@ -1,0 +1,71 @@
+fields:
+    titulo:
+        label: Título
+        span: full
+        placeholder: Titulo
+        type: text
+        comment: 'Titulo del material'
+    slug:
+        label: enlace
+        span: full
+        defaultFrom: slug
+        preset:
+            field: titulo
+            type: slug
+        type: text
+    precio:
+        label: Precio
+        span: left
+        type: text
+    year:
+        label: Año
+        span: right
+        type: text
+    categoria:
+        label: Categoría
+        options:
+            Formacion: Formación
+            Biblia: Biblia
+            Carismas: Carismas
+            Predicas: Predicas
+            'Formacion Musicos': 'Formación Músicos'
+            'Formacion Predicadores': 'Formación Predicadores'
+        span: left
+        type: dropdown
+    tipo:
+        label: Tipo
+        options:
+            Libro: Libro
+            CD: CD
+            Folleto: Folleto
+            Manual: Manual
+            Paquete: Paquete
+            Video: Video
+        span: right
+        type: dropdown
+    imagen:
+        label: Imagen
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    resumen:
+        label: Resumen
+        span: full
+        type: text
+        comment: 'Un resumen corto del material'
+    descripcion:
+        label: Descripción
+        size: large
+        span: full
+        type: richeditor
+    destacar:
+        label: Destacar
+        span: auto
+        type: switch
+        comment: 'Destacar el material para mostrar en la primera opcion'

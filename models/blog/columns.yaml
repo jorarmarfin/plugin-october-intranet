@@ -1,0 +1,7 @@
+columns:
+    titulo:
+        label: Titulo
+        type: text
+    archivar:
+        label: Archivado
+        type: switch

@@ -1,0 +1,11 @@
+columns:
+    user_id:
+        label: Nombres
+        type: nombre_completo
+        searchable: true
+    curso_id:
+        label: Curso
+        type: text
+        searchable: true
+        select: nombre
+        relation: curso

@@ -1,0 +1,10 @@
+name: Biografia
+form: $/luismayta/intranet/models/biografia/fields.yaml
+modelClass: LuisMayta\Intranet\Models\Biografia
+defaultRedirect: luismayta/intranet/biografia
+create:
+    redirect: 'luismayta/intranet/biografia/update/:id'
+    redirectClose: luismayta/intranet/biografia
+update:
+    redirect: luismayta/intranet/biografia
+    redirectClose: luismayta/intranet/biografia

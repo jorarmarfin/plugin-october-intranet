@@ -1,0 +1,7 @@
+columns:
+    frase:
+        label: Frase
+        type: text
+    activo:
+        label: Activo
+        type: switch

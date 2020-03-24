@@ -1,0 +1,11 @@
+name: Registro
+modelClass: LuisMayta\Intranet\Models\Registro
+form: $/luismayta/intranet/models/registro/fields.yaml
+defaultRedirect: luismayta/intranet/registro
+create:
+    redirect: 'luismayta/intranet/registro/update/:id'
+    redirectClose: luismayta/intranet/registro
+update:
+    redirect: luismayta/intranet/registro
+    redirectClose: luismayta/intranet/registro
+preview: {  }

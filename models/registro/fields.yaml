@@ -1,0 +1,22 @@
+fields:
+    nombre:
+        label: Nombre
+        span: left
+        type: text
+    email:
+        label: Email
+        span: right
+        type: text
+    telefono:
+        label: Telefono
+        span: left
+        type: text
+    distrito:
+        label: Distrito
+        span: right
+        type: text
+    mensaje:
+        label: Mensaje
+        size: large
+        span: full
+        type: richeditor

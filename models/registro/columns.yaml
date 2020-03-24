@@ -1,0 +1,13 @@
+columns:
+    evento:
+        label: Evento
+        type: text
+    nombre:
+        label: Nombre
+        type: text
+    telefono:
+        label: telefono
+        type: text
+    email:
+        label: Email
+        type: text

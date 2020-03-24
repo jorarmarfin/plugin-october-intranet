@@ -1,0 +1,36 @@
+fields:
+    titulo:
+        label: Titulo
+        span: full
+        type: text
+    slug:
+        label: Enlace
+        span: full
+        preset:
+            field: titulo
+            type: slug
+        type: text
+    resumen:
+        label: Resumen
+        span: full
+        type: text
+    descripcion:
+        label: Descripcion
+        size: large
+        span: full
+        type: richeditor
+    imagen:
+        label: Imagen
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    archivar:
+        label: Archivar
+        span: auto
+        type: switch

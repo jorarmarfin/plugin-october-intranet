@@ -1,0 +1,10 @@
+columns:
+    titulo:
+        label: Titulo
+        type: text
+    precio:
+        label: precio
+        type: text
+    destacar:
+        label: Destacar
+        type: switch

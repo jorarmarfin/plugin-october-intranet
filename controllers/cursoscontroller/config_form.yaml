@@ -1,0 +1,10 @@
+name: CursosController
+form: $/luismayta/intranet/models/cursosvirtuales/fields.yaml
+modelClass: LuisMayta\Intranet\Models\CursosVirtuales
+defaultRedirect: luismayta/intranet/cursoscontroller
+create:
+    redirect: 'luismayta/intranet/cursoscontroller/update/:id'
+    redirectClose: luismayta/intranet/cursoscontroller
+update:
+    redirect: luismayta/intranet/cursoscontroller
+    redirectClose: luismayta/intranet/cursoscontroller

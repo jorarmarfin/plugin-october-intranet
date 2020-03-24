@@ -1,0 +1,43 @@
+fields:
+    titulo:
+        label: Titulo
+        span: full
+        type: text
+    slug:
+        label: Enlace
+        span: full
+        defaultFrom: titulo
+        preset:
+            field: titulo
+            type: slug
+        type: text
+    resumen:
+        label: Resumen
+        span: full
+        type: text
+    descripcion:
+        label: Descripcion
+        size: large
+        span: full
+        type: richeditor
+    imagen:
+        label: Imagen
+        mode: image
+        imageWidth: '200'
+        imageHeight: '200'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    fechainicio:
+        label: 'Fecha de inicio'
+        mode: datetime
+        span: auto
+        type: datepicker
+    ubicacion:
+        label: Ubicacion
+        size: ''
+        span: auto
+        type: textarea

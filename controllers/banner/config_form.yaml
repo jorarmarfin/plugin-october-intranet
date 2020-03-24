@@ -1,0 +1,10 @@
+name: Banner
+form: $/luismayta/intranet/models/banner/fields.yaml
+modelClass: LuisMayta\Intranet\Models\Banner
+defaultRedirect: luismayta/intranet/banner
+create:
+    redirect: 'luismayta/intranet/banner/update/:id'
+    redirectClose: luismayta/intranet/banner
+update:
+    redirect: luismayta/intranet/banner
+    redirectClose: luismayta/intranet/banner

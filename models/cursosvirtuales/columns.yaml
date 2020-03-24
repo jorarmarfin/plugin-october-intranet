@@ -1,0 +1,11 @@
+columns:
+    nombre:
+        label: Nombre
+        type: text
+        searchable: true
+    precio:
+        label: Precio
+        type: text
+    ocultar:
+        label: Ocultar
+        type: text

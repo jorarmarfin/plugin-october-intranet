@@ -1,0 +1,10 @@
+name: Evento
+form: $/luismayta/intranet/models/evento/fields.yaml
+modelClass: LuisMayta\Intranet\Models\Evento
+defaultRedirect: luismayta/intranet/evento
+create:
+    redirect: 'luismayta/intranet/evento/update/:id'
+    redirectClose: luismayta/intranet/evento
+update:
+    redirect: luismayta/intranet/evento
+    redirectClose: luismayta/intranet/evento

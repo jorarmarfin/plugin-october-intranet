@@ -1,0 +1,14 @@
+fields:
+    user:
+        label: Usuario
+        nameFrom: ''
+        descriptionFrom: description
+        select: 'concat(name,'','',surname)'
+        span: auto
+        type: relation
+    curso:
+        label: Curso
+        nameFrom: nombre
+        descriptionFrom: description
+        span: auto
+        type: relation

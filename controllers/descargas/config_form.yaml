@@ -1,0 +1,10 @@
+name: Descargas
+form: $/luismayta/intranet/models/descargas/fields.yaml
+modelClass: LuisMayta\Intranet\Models\Descargas
+defaultRedirect: luismayta/intranet/descargas
+create:
+    redirect: 'luismayta/intranet/descargas/update/:id'
+    redirectClose: luismayta/intranet/descargas
+update:
+    redirect: luismayta/intranet/descargas
+    redirectClose: luismayta/intranet/descargas

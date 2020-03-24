@@ -1,0 +1,10 @@
+name: UserCurso
+form: $/luismayta/intranet/models/usercurso/fields.yaml
+modelClass: LuisMayta\Intranet\Models\UserCurso
+defaultRedirect: luismayta/intranet/usercurso
+create:
+    redirect: 'luismayta/intranet/usercurso/update/:id'
+    redirectClose: luismayta/intranet/usercurso
+update:
+    redirect: luismayta/intranet/usercurso
+    redirectClose: luismayta/intranet/usercurso
