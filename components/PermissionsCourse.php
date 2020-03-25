@@ -3,6 +3,7 @@
 use Auth;
 use Cms\Classes\ComponentBase;
 use Illuminate\Support\Facades\Redirect;
+use LuisMayta\Intranet\Models\UserCurso;
 use LuisMayta\Intranet\Models\CursosVirtuales;
 
 class PermissionsCourse extends ComponentBase
@@ -19,16 +20,16 @@ class PermissionsCourse extends ComponentBase
         $loggedIn = Auth::check();
         $slug = $this->param('slug');
         $curso = CursosVirtuales::where('slug',$slug)->first();
+        $this->page['mostrar_audios'] = false;
         if ($curso->precio>0) {
             if (!$loggedIn) {
                 return Redirect::to('/login');
+            }else{
+                $user = Auth::getUser();
+                $curso_comprado = UserCurso::Compras($curso->id,$user->id)->first();
+                if (isset($curso_comprado)) $this->page['mostrar_audios'] = true;
             }
         }
-        $this->actor = $this->myfuncion();
-    }
-    public function myfuncion()
-    {
-        return 'hola mundo';
     }
 
 }

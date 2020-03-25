@@ -38,4 +38,10 @@ class UserCurso extends Model
         $user = User::find($this->user_id);
         return $user->name.' '.$user->surname;
     }
+    /**
+    * Scope a query to only include popular users.
+    */
+    public function scopeCompras($query,$user_id,$curso_id){
+         return $query->where('curso_id',$curso_id)->where('user_id',$user_id);
+    }
 }
