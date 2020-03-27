@@ -60,3 +60,6 @@
 1.0.21:
     - 'Updated table luismayta_intranet_user_curso'
     - builder_table_update_luismayta_intranet_user_curso.php
+1.0.22:
+    - 'Updated table luismayta_intranet_user_curso'
+    - builder_table_update_luismayta_intranet_user_curso_2.php

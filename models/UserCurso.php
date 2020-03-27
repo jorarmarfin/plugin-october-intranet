@@ -13,6 +13,7 @@ class UserCurso extends Model
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
      */
+    protected $guarded = [];
     public $timestamps = false;
 
 
@@ -33,11 +34,7 @@ class UserCurso extends Model
         'user' => 'Rainlab\User\Models\User',
         'curso' => 'LuisMayta\Intranet\Models\CursosVirtuales'
     ];
-    public function getNombreCompletoUsuarioAttribute()
-    {
-        $user = User::find($this->user_id);
-        return $user->name.' '.$user->surname;
-    }
+
     /**
     * Scope a query to only include popular users.
     */
