@@ -29,6 +29,8 @@ class PermissionsCourse extends ComponentBase
                 $curso_comprado = UserCurso::Compras($user->id,$curso->id)->first();
                 if (isset($curso_comprado)) $this->page['mostrar_audios'] = true;
             }
+        }else{
+            $this->page['mostrar_audios'] = true;
         }
     }
 
