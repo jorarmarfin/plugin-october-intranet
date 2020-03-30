@@ -26,7 +26,7 @@ class PermissionsCourse extends ComponentBase
                 return Redirect::to('/login');
             }else{
                 $user = Auth::getUser();
-                $curso_comprado = UserCurso::Compras($curso->id,$user->id)->first();
+                $curso_comprado = UserCurso::Compras($user->id,$curso->id)->first();
                 if (isset($curso_comprado)) $this->page['mostrar_audios'] = true;
             }
         }
